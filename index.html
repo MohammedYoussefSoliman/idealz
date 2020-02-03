@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style.css">
+    <title>idealz</title>
+    <script src="https://kit.fontawesome.com/16b28108fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header Section  -->
+
+<header class="global-header">
+
+    <div class="header-top-wrapper">
+        <div class="super-header">
+            <div class="left">
+                <p>
+                    <a href="">Currency: USD - United States Dollar <span><i class="fas fa-chevron-circle-down -selection" style="color: #999"></i></span></a>
+                    
+                </p>
+
+                <div class="select-container">
+                    <input type="hidden" id="currentcurrencycode" name="currentcurrencycode" value="USD">
+                    <form action="" id="currency-change-form-settings" method="post">
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="AED">
+                                        <span>AED - United Arab Emirates Dirham</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="BHD">
+                                        <span>BHD - Bahraini Dinar</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="INR">
+                                        <span>INR - Indian Rupee</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="KWD">
+                                        <span>KWD - Kuwaiti Dinar</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="OMR">
+                                        <span>OMR - Omani Rial</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="SAR">
+                                        <span>SAR - Saudi Riyal</span>
+                                    </label>
+                                </div>
+                                <div class="currencyItem no-border">
+                                    <label>
+                                        <input type="hidden" id="currencyCode" name="currencyCode" value="USD">
+                                        <span>USD - United States Dollar</span>
+                                    </label>
+                                </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="link-list">
+                    <li class="langSwitch"><a href="#">العربية</a></li>
+                    <li><a href="#">About Idealz</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom-wrapper">
+        <div class="header">
+            <div class="left">
+                <a class="icon-burger" data-toggle="offCanvas"></a>
+                <a class="home-icon" href="/">
+                    <img src="/images/newidealzlogo.svg" width="112">
+                </a>
+                    <ul class="link-list">
+                        <li><a class="red-dot" href="#">How it works</a></li>
+                        <li><a href="#">Campaigns</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+            </div>
+
+            <div class="right">
+                <ul class="link-list">
+                    <li class="search-link">
+                        <div class="search-section">
+                            <div>
+                                 <form class="clearfix">
+                                    <input class="search-triggers search-input" data-val="true" data-val-required="Please enter a search query." id="q" name="q" placeholder="Search Products and Prizes" type="search" value="">
+                                    <button class="search-submit" type="submit"></button>
+                                </form>
+                                <a class="icon-search" href="#"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="overlay-container">
+                        <a class="header-overlay-trigger user-greeting logged-out" href="#">
+                            <div>
+                                <span class="icon-profile">Login or Register</span>
+                            </div>
+                        </a>
+                        
+                        <ul class="overlay-section" style="max-width: 302.438px;">
+                            <li class="login-form-container"><div class="quick-login">
+
+                                <form class="reg-form materialize-form" id="quick-login" method="post" action="/login/registrationlogin" onsubmit="return false" novalidate="novalidate">
+                                    <input id="RegistrationInternalLoginViewModel_ReturnUrl" name="RegistrationInternalLoginViewModel.ReturnUrl" type="hidden" value="/">
+                                    <div class="input-field">
+                                        <input class="validate" id="QuickLoginViewModel_Email" name="RegistrationInternalLoginViewModel.Email" type="email" autocomplete="off">
+                                        <label for="QuickLoginViewModel_Email" data-label="Email address" class="">Email address</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input class="validate" id="QuickLoginViewModel_Password" name="RegistrationInternalLoginViewModel.PasswordLogin" type="password">
+                                        <label for="QuickLoginViewModel_Password" data-label="Password" class="">Password</label>
+                                    </div>
+                                    <div class="input-field button-container">
+                                        <button class="m-t-20 custom-button button is-disabled" id="btn-login" type="submit" disabled="disabled">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </li>
+                            <li><a href="#" style="color:red">New user? Register now</a></li>
+                            <li><a class="loginLinks" id="forgotPWForm">Password help</a></li>
+                            <li><a href="/wishlist/" class="icon-wishlist2">Wishlist</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a class="header-cart icon-cart empty" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <div class="home-page-hero">
+        <img src="/images/hand-banner-final2x.jpg" alt="hero background" class="img-bg">
+        <div class="hero-main-content">
+            <div class="bannertext">
+                <span>Download Now</span><br>
+                <span>and start shopping</span>
+            </div>
+            <div class="store">
+                <a class="appstore icon-appstore" href="https://itunes.apple.com/ae/app/idealz/id374428397">
+                    <img alt="" src="/images/appstore2x.png">
+                </a>
+                <a class="playstore icon-playstore" href="https://play.google.com/store/apps/details?id=app.android.idealz.com">
+                    <img alt="" src="/images/google-play2x.png">
+                </a>
+            </div>
+            <h3>Online Shopping Reimagined!</h3>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
